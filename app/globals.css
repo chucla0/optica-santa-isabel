@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f7f5;
+  color: #1a1a1a;
+  scroll-behavior: auto;
+}
+
+a,
+button {
+  transition: all 500ms ease;
+}
+
+.text-reveal {
+  clip-path: inset(0 0 100% 0);
+}
