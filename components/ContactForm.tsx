@@ -83,26 +83,31 @@ export function ContactForm() {
         </div>
       </div>
       
-      <div className="pt-4">
+      <div className="pt-4 space-y-4">
+        <p className="text-[10px] text-cream/40 uppercase tracking-widest text-center italic">
+          * Al enviar este formulario, te llamaremos personalmente para confirmar el horario de tu cita.
+        </p>
+        
         <button 
           disabled={status === 'sending'}
           type="submit" 
           className="w-full bg-cyan py-6 text-xs font-bold uppercase tracking-[0.3em] text-charcoal hover:bg-white transition-colors duration-500 disabled:opacity-50"
         >
-          {status === 'sending' ? 'ENVIANDO...' : 'SOLICITAR DISPONIBILIDAD'}
+          {status === 'sending' ? 'ENVIANDO...' : 'SOLICITAR CITA POR TELÉFONO'}
         </button>
         
         {status === 'success' && (
           <p className="mt-4 text-cyan text-xs font-bold uppercase tracking-widest text-center animate-pulse">
-            ¡Solicitud enviada! Nos pondremos en contacto pronto.
+            ¡Solicitud enviada! En breve te llamaremos para confirmar.
           </p>
         )}
         {status === 'error' && (
           <p className="mt-4 text-red-400 text-xs font-bold uppercase tracking-widest text-center">
-            Error al enviar. Inténtalo de nuevo o llámanos.
+            Error al enviar. Inténtalo de nuevo o llámanos directamente.
           </p>
         )}
       </div>
+
     </form>
   );
 }
