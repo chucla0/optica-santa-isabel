@@ -13,8 +13,7 @@ export default function PrivacidadPage() {
               El responsable del tratamiento de los datos personales recogidos en Óptica Santa Isabel es:
             </p>
             <ul className="list-none space-y-2 border-l border-cyan pl-6 py-2">
-              <li><strong>Titular:</strong> Armando Miralles Guerrero</li>
-              <li><strong>DNI:</strong> 25171606S</li>
+              <li><strong>Titular:</strong> Mª Isabel García (Óptica Ebro Santa Isabel)</li>
               <li><strong>Dirección:</strong> Avenida Santa Isabel 117, Zaragoza</li>
               <li><strong>Email:</strong> opticasantaisabel@hotmail.com</li>
             </ul>

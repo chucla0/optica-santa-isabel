@@ -45,7 +45,7 @@ export default function ContactoPage() {
                     <span className="text-cyan-deep tracking-widest text-[10px] font-bold uppercase">Horario</span>
                     <p className="text-sm font-light text-charcoal/80 uppercase tracking-widest leading-loose">
                       L a V: 9:30 - 13:00 / 17:00 - 20:00<br/>
-                      Sábados: 10:00 - 13:00 (solo con cita previa)
+                      Sábados: 10:00 - 13:00
                     </p>
                   </div>
                </div>
