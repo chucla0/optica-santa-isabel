@@ -13,8 +13,8 @@ export default function AvisoLegalPage() {
               En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico, se hace constar que el titular de esta página web es:
             </p>
             <ul className="list-none space-y-2 border-l border-cyan pl-6 py-2">
-              <li><strong>Titular:</strong> Óptica Ebro Santa Isabel (Mª Isabel García)</li>
-              <li><strong>NIF:</strong> [CIF/NIF Real necesario]</li>
+              <li><strong>Titular:</strong> Armando Miralles Guerrero</li>
+              <li><strong>DNI:</strong> 25171606S</li>
               <li><strong>Dirección:</strong> Avenida Santa Isabel 117, 50016 Zaragoza</li>
               <li><strong>Email:</strong> opticasantaisabel@hotmail.com</li>
               <li><strong>Teléfono:</strong> 976 46 57 97</li>
