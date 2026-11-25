@@ -1,51 +1,42 @@
-# Óptica Santa Isabel — Plataforma Digital Premium
+# Óptica Santa Isabel
 
-Este repositorio contiene el sitio web oficial de **Óptica Santa Isabel**, Zaragoza. Se ha desarrollado bajo un enfoque editorial de lujo, combinando alta tecnología web con un diseño minimalista y sofisticado.
+Web de una óptica de Zaragoza abierta desde 1985. Enseña sus servicios y colecciones y permite pedir cita.
 
-## Resumen del Proyecto
+**[Ver la web](https://optica-santa-isabel.vercel.app/)**
 
-El objetivo principal de esta plataforma es ofrecer una experiencia de usuario fluida y visualmente impactante, destacando los servicios de salud visual y colecciones de óptica mediante animaciones interactivas y una navegación intuitiva.
+![Portada de Óptica Santa Isabel](https://izandelacruz.dev.ar/shots/optica.webp)
 
-- **Diseño**: Minimalista, con paleta de colores curada y tipografía de alta gama.
-- **Funcionalidad**: Sistema integrado de cita previa y contacto directo.
-- **Experiencia**: Scroll suave coordinado con animaciones de entrada asimétricas.
+## Qué tiene
 
----
+- Páginas de servicios, colecciones, audiología, historia y contacto.
+- Un ojo animado con Rive y animaciones de entrada con Framer Motion.
+- Scroll suave con Lenis.
+- Formulario de cita y contacto que se envía por correo.
 
-## Stack Tecnológico
+## Tecnologías
 
-El proyecto está construido sobre las herramientas más modernas del ecosistema web:
+Next.js 15 (App Router), TypeScript, Tailwind CSS, Framer Motion, Rive, Lenis y Nodemailer.
 
-- **Frontend**: [Next.js 15 (App Router)](https://nextjs.org/) con [TypeScript](https://www.typescriptlang.org/).
-- **Estilos**: [Tailwind CSS](https://tailwindcss.com/) para una gestión de diseño atómica.
-- **Animaciones**: [Framer Motion](https://www.framer.com/motion/) y [Rive](https://rive.app/) para componentes interactivos complejos.
-- **Efectos**: [Lenis](https://github.com/darkroomengineering/lenis) para scroll suave editorial.
-- **Backend**: Integración nativa con [NodeMailer](https://nodemailer.com/) para envíos SMTP.
+## Un reto
 
----
+Enviar las citas por correo sin un servicio externo. Una ruta de servidor de Next.js (`app/api/contact`) habla con el correo por SMTP, así que las claves nunca llegan al navegador.
 
-## Documentación Detallada
+## En local
 
-Para una comprensión profunda de cómo está construido el proyecto y cómo configurarlo, revisa la carpeta `docs/`:
-
-1.  📂 [**Arquitectura del Sistema**](docs/architecture.md): Estructura de carpetas y patrones de renderizado.
-2.  📂 [**Sistema de Email**](docs/email-system.md): Configuración de SMTP y envío de formularios.
-3.  📂 [**Setup y Despliegue**](docs/setup.md): Guía paso a paso para desarrollo y producción en Vercel.
-
----
-
-## Guía Rápida de Inicio
-
-```bash
-# Instalar dependencias
+```sh
 npm install
-
-# Iniciar servidor de desarrollo
 npm run dev
 ```
 
-El sitio estará disponible en `http://localhost:3000`.
+La web queda en `http://localhost:3000`. Para probar el formulario, copia `.env.example` como `.env` y pon los datos de un servidor SMTP.
 
----
+## Documentación
 
-© 2024 Óptica Santa Isabel. Desarrollado con pasión por la excelencia visual.
+- [Arquitectura](docs/architecture.md)
+- [Sistema de correo](docs/email-system.md)
+- [Puesta en marcha y despliegue](docs/setup.md)
+
+## Autor
+
+Izan de la Cruz, desarrollador full stack junior.
+[Portafolio](https://izandelacruz.dev.ar) · [LinkedIn](https://linkedin.com/in/iizancruzz)
